@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="SE1511_Trung_0859_Web.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body style="height: 218px">
+    <form id="form1" runat="server">
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                <p style="background-color: #FF0000">
+                    Wellcome to MasterPage. ChildPage ang Wizard</p>
+            </asp:ContentPlaceHolder>
+            <asp:Menu ID="Menu1" runat="server">
+                <Items>
+                    <asp:MenuItem NavigateUrl="~/Home.aspx" Text="Home" Value="Home"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/BuildPubs.aspx" Text="Build a Pubs" Value="Build a Pubs"></asp:MenuItem>
+                    <asp:MenuItem NavigateUrl="~/ViewJobs.aspx" Text="View Jobs" Value="View Jobs"></asp:MenuItem>
+                </Items>
+            </asp:Menu>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+            </asp:ContentPlaceHolder>
+            <asp:Label ID="Label1" runat="server" Text="Copyright @ 2017"></asp:Label>
+        </div>
+    </form>
+</body>
+</html>
